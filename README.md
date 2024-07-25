@@ -15,14 +15,16 @@ This tool performs static analysis on HTML files to identify potential security 
 pip install beautifulsoup4 jsbeautifier
 ```
 ## OUTPUT for <example.html>
+```bash
+python htmlscan.py
 
-Findings Summary:
-Scripts: 1 found
-Iframes: 1 found
-Event_handlers: 1 found
-Obfuscation: 1 found
-Phishing_forms: 1 found
-Malvertising: 3 found
+-Findings Summary:
+-Scripts: 1 found
+-Iframes: 1 found
+-Event_handlers: 1 found
+-Obfuscation: 1 found
+-Phishing_forms: 1 found
+-Malvertising: 3 found
 
 Insights:
 - The HTML contains obfuscated JavaScript which was deobfuscated for further analysis.
@@ -47,3 +49,4 @@ eval(String.fromCharCode(100, 111, 99, 117, 109, 101, 110, 116, 46, 119, 114, 10
 
 Phishing Score: 12/10
 This HTML file is likely to be malicious or phishing.
+```
