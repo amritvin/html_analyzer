@@ -1,0 +1,77 @@
+{
+    "obfuscation_patterns": [
+        "eval(",
+        "unescape(",
+        "document.write(",
+        "setTimeout(",
+        "setInterval(",
+        "Function(",
+        "atob(",
+        "btoa(",
+        "charCodeAt(",
+        "fromCharCode("
+    ],
+    "malicious_domains": [
+        "badexample.com",
+        "maliciousdomain.com",
+        "phishingsite.com",
+        "scamsite.net",
+        "dangerous-site.org"
+    ],
+    "suspicious_event_handlers": [
+        "onclick",
+        "onmouseover",
+        "onload",
+        "onerror",
+        "onfocus",
+        "onblur"
+    ],
+    "phishing_keywords": [
+        "login",
+        "signin",
+        "account",
+        "verify",
+        "password",
+        "secure",
+        "bank",
+        "update",
+        "confirm",
+        "identity",
+        "security",
+        "alert",
+        "unusual",
+        "activity"
+    ],
+    "phishing_forms": [
+        {
+            "action_patterns": [
+                "login",
+                "signin",
+                "submit",
+                "account",
+                "password"
+            ],
+            "input_types": [
+                "password",
+                "email",
+                "text"
+            ]
+        }
+    ],
+    "suspicious_iframes": [
+        "display:none",
+        "visibility:hidden",
+        "width:0",
+        "height:0",
+        "position:absolute",
+        "left:-9999px"
+    ],
+    "malvertising_keywords": [
+        "click here",
+        "free",
+        "download now",
+        "claim",
+        "prize",
+        "winner"
+    ]
+}
