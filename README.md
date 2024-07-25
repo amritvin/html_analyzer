@@ -3,19 +3,19 @@
 This tool performs static analysis on HTML files to identify potential security risks such as phishing, malvertising, obfuscation, and other malicious activities. It uses predefined rules to detect suspicious patterns in the HTML content.
 
 ## Features
--**Detect and deobfuscate JavaScript: Identifies obfuscated JavaScript and deobfuscates it for further analysis. // still working on deobfuscation.**
--**Phishing detection: Checks for phishing keywords and form actions that are commonly used in phishing attacks.**
--**Malvertising detection: Looks for keywords that are often used in scams and fraudulent schemes.**
--**Iframes analysis: Identifies hidden iframes that may be used for drive-by downloads or malvertising.**
--**Event handlers analysis: Detects elements with suspicious event handlers which can be used for malicious activities.**
+-Detect and deobfuscate JavaScript: Identifies obfuscated JavaScript and deobfuscates it for further analysis. // still working on deobfuscation.
+-Phishing detection: Checks for phishing keywords and form actions that are commonly used in phishing attacks.
+-Malvertising detection: Looks for keywords that are often used in scams and fraudulent schemes.
+-Iframes analysis: Identifies hidden iframes that may be used for drive-by downloads or malvertising.
+-Event handlers analysis: Detects elements with suspicious event handlers which can be used for malicious activities.
 
 
 ## Install Dependencies
 ```bash
 pip install beautifulsoup4 jsbeautifier
-```bash
-##OUTPUT for <example.html>
--
+```
+## OUTPUT for <example.html>
+
 Findings Summary:
 Scripts: 1 found
 Iframes: 1 found
