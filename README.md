@@ -18,13 +18,13 @@ pip install beautifulsoup4 jsbeautifier
 ```bash
 python htmlscan.py
 
--Findings Summary:
--Scripts: 1 found
--Iframes: 1 found
--Event_handlers: 1 found
--Obfuscation: 1 found
--Phishing_forms: 1 found
--Malvertising: 3 found
+- Findings Summary:
+- Scripts: 1 found
+- Iframes: 1 found
+- Event_handlers: 1 found
+- Obfuscation: 1 found
+- Phishing_forms: 1 found
+- Malvertising: 3 found
 
 Insights:
 - The HTML contains obfuscated JavaScript which was deobfuscated for further analysis.
