@@ -9,10 +9,14 @@ This tool performs static analysis on HTML files to identify potential security 
 - Iframes analysis: Identifies hidden iframes that may be used for drive-by downloads or malvertising.
 - Event handlers analysis: Detects elements with suspicious event handlers which can be used for malicious activities.
 
-
 ## Install Dependencies
 ```bash
-pip install beautifulsoup4 jsbeautifier
+pip install -r requirements.txt
+
+jsbeautifier
+PyExecJS
+beautifulsoup4==4.10.0
+jsbeautifier==1.14.0
 ```
 ## OUTPUT for <example.html>
 ```bash
