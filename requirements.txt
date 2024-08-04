@@ -1,0 +1,4 @@
+jsbeautifier
+PyExecJS
+beautifulsoup4==4.10.0
+jsbeautifier==1.14.0
