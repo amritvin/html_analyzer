@@ -41,15 +41,15 @@ Insights:
 - The HTML contains the malvertising keyword 'prize' which is often used in scams and fraudulent schemes.
 - The HTML contains the malvertising keyword 'claim' which is often used in scams and fraudulent schemes.
 
-Obfuscation Details:
-Original Obfuscated Script:
-
+- Obfuscation Details:
+- Original Obfuscated Script:
 // Obfuscated JavaScript example
 eval(String.fromCharCode(100,111,99,117,109,101,110,116,46,119,114,105,116,101,40,34,72,101,108,108,111,32,87,111,114,108,100,34,41));
 
-Deobfuscated Script:
+- Deobfuscated Script:
  // Obfuscated JavaScript example
-eval(String.fromCharCode(100, 111, 99, 117, 109, 101, 110, 116, 46, 119, 114, 105, 116, 101, 40, 34, 72, 101, 108, 108, 111, 32, 87, 111, 114, 108, 100, 34, 41));
+eval(document.write("Hello World"));
+
 
 Phishing Score: 12/10
 This HTML file is likely to be malicious or phishing.
