@@ -2,19 +2,19 @@ import re
 import json
 from bs4 import BeautifulSoup
 from jsbeautifier import beautify
-
+from js_deob import extract_and_execute
 # Rule file (JSON) for updating rules
 RULE_FILE = "rules.json"
 
 # Load rules from the file
 def load_rules():
-    with open(RULE_FILE, 'r') as file:
+    with open(RULE_FILE, 'r', encoding='utf-8') as file:
         rules = json.load(file)
     return rules
 
 # Update rules function
 def update_rules(new_rules):
-    with open(RULE_FILE, 'w') as file:
+    with open(RULE_FILE, 'w', encoding='utf-8') as file:
         json.dump(new_rules, file, indent=4)
     print("Rules updated successfully.")
 
@@ -111,11 +111,11 @@ def static_analysis(html_content, rules):
 
 # Main function
 def main(html_file):
-    with open(html_file, 'r') as file:
+    with open(html_file, 'r', encoding='utf-8') as file:
         html_content = file.read()
-    
+    deobfuscated_html=extract_and_execute(html_content)
     rules = load_rules()
-    findings, insights, phishing_score = static_analysis(html_content, rules)
+    findings, insights, phishing_score = static_analysis(deobfuscated_html, rules)
     
     print("Findings Summary:")
     for key, value in findings.items():
@@ -153,7 +153,7 @@ if __name__ == "__main__":
         ],
         "malvertising_keywords": ["free", "prize", "winner", "congratulations", "claim"]
     }
-    #update_rules(new_rules)
+    # update_rules(new_rules)
 
     # Analyze an HTML file
     html_file_path = "example.html"  # replace with your HTML file path
